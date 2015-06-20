@@ -1,0 +1,21 @@
+body{
+	width: 990px;
+	margin: auto;
+}
+.product{
+	width: 100%;
+}
+.product-info{
+	float: left;
+	width: 40%;
+	margin-right: 10px; 
+}
+.product-name{
+	padding: 5px;
+	cursor: pointer;
+}
+.product-name:HOVER {
+	background-color: #428bca;
+	color: #FFF;
+}
+
