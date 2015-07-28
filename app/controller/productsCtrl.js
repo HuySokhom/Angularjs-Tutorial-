@@ -6,13 +6,14 @@ app.controller(
 	, '$location'
 	, function ($scope, Factory, Services, $location){
 		
-		function init(){
+		$scope.init = function(){
 			Factory.get().success(function(data){
 				$scope.products = data;
+				console.log(data);
 			});
 		};
 		// initial function 
-		init();
+		$scope.init();
 		
 		$scope.edit = function( params ){
 			Services.set( params );

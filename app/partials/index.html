@@ -1,0 +1,21 @@
+<div class="product">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3>Product Name</h3>
+		</div>
+		<div class="panel-body">
+			<div
+				data-ng-repeat="product in products"
+				class="product-name"
+				data-ng-click="edit(product);"
+				data-toggle="modal" 
+				data-target="#product"
+			>
+				{{product.id}}). 
+				<span 
+					data-ng-bind="product.name"					
+				></span>
+			</div>
+		</div>	
+	</div>
+</div>

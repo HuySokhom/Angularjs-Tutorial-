@@ -7,31 +7,8 @@
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 </head>
 <body 
-	data-ng-app="main"
-	data-ng-controller="productsCtrl" 
+	data-ng-app="main" 
 >
-	
-	<div class="product">
-		<div class="panel panel-primary product-info">
-			<div class="panel-heading">
-				<h3>Product Name</h3>
-			</div>
-			<div class="panel-body">
-				<div
-					data-ng-repeat="product in products.data"
-					class="product-name"
-					data-ng-click="edit(product);"
-				>
-					{{$index}}). 
-					<span 
-						data-ng-bind="product.name"					
-					></span>
-				</div>
-			</div>	
-		</div>
-	</div>
-	
-	
 	<div data-ng-view=""></div>
 	
 	<!-- Libraries -->
