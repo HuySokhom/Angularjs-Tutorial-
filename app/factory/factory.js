@@ -31,6 +31,14 @@ app.factory("Factory", [
             });
         };        
         
+        obj.remove = function(params) {
+            return $http({
+        		url: 'data/product_delete.php',
+    			method: 'GET',
+    			params: params
+            });
+        };        
+        
         return obj;
         
  	}
